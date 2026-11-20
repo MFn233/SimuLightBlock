@@ -1,0 +1,10 @@
+itemGroup.simulightblock=仿真灯箱
+
+tile.light_block_white.name=白色灯箱
+tile.light_block_red.name=红色灯箱
+tile.light_block_orange.name=橙色灯箱
+tile.light_block_yellow.name=黄色灯箱
+tile.light_block_green.name=绿色灯箱
+tile.light_block_blue.name=蓝色灯箱
+tile.light_block_purple.name=紫色灯箱
+tile.light_block_rainbow.name=彩虹灯箱

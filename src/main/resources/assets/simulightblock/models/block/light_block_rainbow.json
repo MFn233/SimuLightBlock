@@ -1,0 +1,4 @@
+{
+  "parent": "block/cube_all",
+  "textures": { "all": "simulightblock:blocks/light_block_rainbow" }
+}

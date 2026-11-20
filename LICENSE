@@ -1,6 +1,16 @@
 MIT License
 
-Copyright (c) 2022 CleanroomMC 
+Copyright (c) 2026 MFn233 (code)
+Copyright (c) Scott Hather (original SimuKraft light block design and textures)
+
+This project is a 1.12.2 rewrite of the light blocks from SimuKraft. The source code
+in this repository is original work written for Minecraft 1.12.2 and is licensed under
+the MIT License below. The block textures in
+src/main/resources/assets/simulightblock/textures/blocks/ are the original artwork of
+Scott Hather and are redistributed here with attribution; they are not relicensed by
+this file. See CREDITS.md for details.
+
+The build scripts originate from CleanroomMC's TemplateDevEnv, also MIT licensed.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

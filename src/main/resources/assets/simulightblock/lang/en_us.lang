@@ -1,0 +1,10 @@
+itemGroup.simulightblock=SimuLightBlock
+
+tile.light_block_white.name=White Light Box
+tile.light_block_red.name=Red Light Box
+tile.light_block_orange.name=Orange Light Box
+tile.light_block_yellow.name=Yellow Light Box
+tile.light_block_green.name=Green Light Box
+tile.light_block_blue.name=Blue Light Box
+tile.light_block_purple.name=Purple Light Box
+tile.light_block_rainbow.name=Rainbow Light Box

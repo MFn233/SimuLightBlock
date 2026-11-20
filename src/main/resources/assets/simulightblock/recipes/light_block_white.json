@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["GGG", "GDG", "GGG"],
+  "key": {
+      "G": { "item": "minecraft:glass" },
+      "D": { "item": "minecraft:dye", "data": 15 }
+  },
+  "result": { "item": "simulightblock:light_block_white", "count": 8 }
+}

@@ -1,21 +1,39 @@
-## TemplateDevEnv
-_For Kotlin see [TemplateDevEnvKt](https://github.com/CleanroomMC/TemplateDevEnvKt)_
+# SimuLightBlock
 
-Template workspace for modding Minecraft 1.12.2. Licensed under MIT, it is made for public use.
+彩色灯箱方块，从 SimuKraft 移植到 Minecraft 1.12.2。
 
-This template runs on **Java 25**, **Gradle 9.7.0** + **[RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) 2.0.3** + **Forge 14.23.5.2847**.
+八种颜色：白、红、橙、黄、绿、蓝、紫、彩虹（彩虹为 7 帧循环动画）。全部为**光照等级 15** 的完整方块，适合做灯箱、招牌底光和装饰照明。
 
-With **coremod and mixin support** that is easy to configure.
+## 合成
 
-### Instructions:
+```
+玻璃 玻璃 玻璃
+玻璃 染料 玻璃       → 8 个对应颜色的灯箱
+玻璃 玻璃 玻璃
+```
 
-1. Click `use this template` at the top.
-2. Clone the repository that you have created with this template to your local machine.
-3. Make sure IDEA is using Java 25 for Gradle before you sync the project. Verify this by going to IDEA's `Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`.
-4. Open the project folder in IDEA. When prompted, click "Load Gradle Project" as it detects the `build.gradle`, if you weren't prompted, right-click the project's `build.gradle` in IDEA, select `Link Gradle Project`, after completion, hit `Refresh All` in the gradle tab on the right.
-5. Run gradle tasks such as `runClient` and `runServer` in the IDEA gradle tab, or use the auto-imported run configurations like `1. Run Client`.
+彩虹灯箱把染料换成**海晶砂粒**。
 
-### Notes:
-- Dependencies script in [gradle/scripts/dependencies.gradle](gradle/scripts/dependencies.gradle), explanations are commented in the file.
-- Publishing script in [gradle/scripts/publishing.gradle](gradle/scripts/publishing.gradle).
-- When writing Mixins on IntelliJ, it is advisable to use latest [MinecraftDev Fork for RetroFuturaGradle](https://github.com/eigenraven/MinecraftDev/releases).
+## 版本
+
+| 项 | 值 |
+|---|---|
+| Minecraft | 1.12.2 |
+| 加载器 | Forge 14.23.5.2847+ / Cleanroom |
+| 构建 | Java 8 目标，Gradle 9 + RetroFuturaGradle |
+| 许可证 | 代码 MIT；材质署名 Scott Hather（详见 [CREDITS.md](CREDITS.md)） |
+
+## 构建
+
+```bash
+./gradlew build
+# 产物：build/libs/simulightblock-<version>.jar
+```
+
+需要 JDK 25 运行 Gradle，编译目标为 Java 8。
+
+## 开发说明
+
+- 方块与物品注册：`ModBlocks`（`RegistryEvent`）
+- 客户端模型：`ClientModels`（`ModelRegistryEvent`）
+- 新增颜色：在 `ModBlocks.COLORS` 加一项，并在 `assets/simulightblock` 下补 blockstate / 模型 / 材质 / 语言 / 配方即可

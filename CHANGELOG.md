@@ -1,6 +1,13 @@
 # Changelog
 
-## [1.0.0] - 2023-09-15
+## [1.0.0] - 2026-11-20
 
 ### Added
-- This is a default template changelog that follows the [KeepAChangelog Convention](https://keepachangelog.com/en/1.1.0/)
+- 八种颜色的灯箱方块（白 / 红 / 橙 / 黄 / 绿 / 蓝 / 紫 / 彩虹），光照等级 15
+- 彩虹灯箱使用 7 帧循环动画（frametime 4）
+- 合成：8 玻璃 + 1 染料 = 8 个灯箱；彩虹用海晶砂粒
+- 中英双语，独立创造模式物品栏
+
+### Notes
+- 方块使用 `Material.ROCK` 与不透明立方体，而不是 `Material.GLASS`：材质是不透明的 16x16 像素图，玻璃材质不会遮挡光照，会让方块看起来发灰
+- 移植自 SimuKraft，原始设计与材质由 Scott Hather 制作；代码为 1.12.2 重写，采用 MIT，材质署名引用（见 CREDITS.md）
