@@ -23,8 +23,6 @@
 | 7 | 紫 | `simulightblock:light_block_purple` |
 | 8 | 彩 | `simulightblock:light_block_rainbow` |
 
-物品栏内按 **白 → 红 → 橙 → 黄 → 绿 → 蓝 → 紫 → 彩** 排列（即注册顺序）。彩虹灯箱是 7 帧循环动画，`frametime` 为 4。
-
 ## 合成
 
 ```
